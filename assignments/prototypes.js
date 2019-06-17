@@ -75,7 +75,55 @@ Humanoid.prototype.greet = function() {
   * Instances of CharacterStats should have all of the same properties as GameObject.
 */
 
-const 
+const mage = new Humanoid({
+  createdAt: new Date(),
+  dimensions: {
+    length: 2,
+    width: 1,
+    height: 1,
+  },
+  healthPoints: 5,
+  name: 'Bruce',
+  team: 'Mage Guild',
+  weapons: [
+    'Staff of Shamalama',
+  ],
+  language: 'Common Tongue',
+});
+
+const swordsman = new Humanoid({
+  createdAt: new Date(),
+  dimensions: {
+    length: 2,
+    width: 2,
+    height: 2,
+  },
+  healthPoints: 15,
+  name: 'Sir Mustachio',
+  team: 'The Round Table',
+  weapons: [
+    'Giant Sword',
+    'Shield',
+  ],
+  language: 'Common Tongue',
+});
+
+const archer = new Humanoid({
+  createdAt: new Date(),
+  dimensions: {
+    length: 1,
+    width: 2,
+    height: 4,
+  },
+  healthPoints: 10,
+  name: 'Lilith',
+  team: 'Forest Kingdom',
+  weapons: [
+    'Bow',
+    'Dagger',
+  ],
+  language: 'Elvish',
+});
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
 
